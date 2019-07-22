@@ -24,7 +24,7 @@ public class Image {
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
             driver.manage().window().maximize();
             driver.get("https://eprisons.nic.in/Delhi/secure/login.aspx");
-            login("inspjaitpur", "Password@22");
+            login("login", "password");
             String imageURL = url+id;
             driver.get(imageURL);
             Thread.sleep(1000L);
